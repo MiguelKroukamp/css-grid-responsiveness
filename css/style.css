@@ -82,10 +82,39 @@ body {
     grid-area: sidebar;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
 
     .grid-1 {
         /* grid declaration styles */
+        display: grid;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px auto 80px;
+    grid-gap: 20px;
+
+    grid-template-areas: 
+        "header"
+        "main"   
+        "sidebar"
+        "footer";
     }
+    .item-2 {
+        background: #33a8a5;
+        grid-area: main;
+    
+        display: grid;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+    
+        grid-template-areas: 
+            "header"
+            "article" 
+            "sidebar";
+    
 
 }
