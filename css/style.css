@@ -82,6 +82,7 @@ body {
     grid-area: sidebar;
 }
 
+/* resposiveness starts here */
 @media only screen and (max-width: 500px) {
 
     .grid-1 {
